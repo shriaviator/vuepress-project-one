@@ -1,0 +1,19 @@
+{
+  "name": "vupress-one",
+  "version": "0.0.1",
+  "description": "tsguide",
+  "main": "index.js",
+  "authors": {
+    "name": "srinivas chilukuri",
+    "email": "shridcp@gmail.com"
+  },
+  "repository": "later/vupress-one",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
