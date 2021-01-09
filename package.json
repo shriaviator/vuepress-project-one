@@ -10,7 +10,9 @@
   "repository": "later/vupress-one",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "docs:build": "vuepress build docs"
+
   },
   "license": "MIT",
   "devDependencies": {
