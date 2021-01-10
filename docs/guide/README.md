@@ -14,4 +14,11 @@ The CFDS also takes into account a major objective of the line maintenance which
 
 # Failure classification and Indication :-
 
-<vue-table/>
+| FAULT MESSAGE                | POTENTIAL CAUSES                                         | NOTES                                |
+| ---------------------------- | -------------------------------------------------------- | ------------------------------------ |
+| AIR COND CTL 1(2)-A(B) FAULT | LANE A(B) OF ACSC HAS FAILED                             |                                      |
+| AIR PACK 1(2) FAULT          | PACK FCV POSITION DISAGREES WITH THE COMMANDED POSITION  |                                      |
+| AIR PACK 1+2 FAULT           | BOTH ACSC HAS FAILED                                     |                                      |
+| AIR PACK 1(2) OFF            | PACK 1(2) SW TO OFF & NO FAILURE DETECTED                |                                      |
+| AIR PACK 1(2) OVHT           | PACK COMPRESSOR OUTLET TEMPERATURE RISES ABOVE 260 DEG C |                                      |
+| AIR PACK 1(2) REGUL FAULT    | TEMP REGULATION PERFORMANCE IS DEGRADED                  | RESET BOTH ASCC REFER CB RESET CHART |
