@@ -10,4 +10,8 @@ The Main purpose of the CFDS is to ease aircraft maintenance by compiling failur
 
 # Built-In Test Equipment
 
-The CFDS also takes into account a major objective of the line maintenance which is to avoid unjustified removal of equipment .For these reasons the CFDS makes a detailed analysis to identify
+The CFDS also takes into account a major objective of the line maintenance which is to avoid unjustified removal of equipment .For these reasons the CFDS makes a detailed analysis to identify the responsible LRUs ; this is also to confirm that the event was actually due to a hardware failure and not a intermittent fault .To achieve its purpose ; the cfds has several major functions which supply a maintenance Post Flight Report (PFR) which is printed at the end of each flight .
+
+# Failure classification and Indication :-
+
+<vue-table/>
