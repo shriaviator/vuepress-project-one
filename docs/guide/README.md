@@ -4,7 +4,7 @@ sidebarDepth: 2
 
 # Introduction
 
-### A320 Family Aircrafts have No Fault Found Policy(NFF)
+## A320 Family Aircrafts have No Fault Found Policy(NFF)
 
 The aircraft is equipped with a high number of digital items of equipment . In most of the cases , computers may be recovered after a abnormal behaviour or a detected fault , either by a software reset(reset of the microprocessor) or by interrupting the power supply of its processing parts for a short time . This is achieved with the normal cockpit controls(engagement levers , pushbutton switches ), by selecting the related control off then on or by a action on the corresponding circuit breaker .
 
