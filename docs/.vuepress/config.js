@@ -46,8 +46,8 @@ module.exports = {
         link: "/config/",
       },
       {
-        text: "VuePress",
-        link: "https://v1.vuepress.vuejs.org",
+        text: "DGCA",
+        link: "https://dgca.gov.in/digigov-portal/",
       },
     ],
     sidebar: {

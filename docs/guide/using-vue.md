@@ -1,9 +1,12 @@
-# Using Vue in Markdown
+# Ecam Warning Table Test
 
-## Browser API Access Restrictions
+##### Failure classification and Indication :-
 
-Because VuePress applications are server-rendered in Node.js when generating static builds, any Vue usage must conform to the [universal code requirements](https://ssr.vuejs.org/en/universal.html). In short, make sure to only access Browser / DOM APIs in `beforeMount` or `mounted` hooks.
-
-If you are using or demoing components that are not SSR friendly (for example containing custom directives), you can wrap them inside the built-in `<ClientOnly>` component:
-
-##
+| FAULT MESSAGE                | POTENTIAL CAUSES                                         | NOTES                                |
+| ---------------------------- | -------------------------------------------------------- | ------------------------------------ |
+| AIR COND CTL 1(2)-A(B) FAULT | LANE A(B) OF ACSC HAS FAILED                             |                                      |
+| AIR PACK 1(2) FAULT          | PACK FCV POSITION DISAGREES WITH THE COMMANDED POSITION  |                                      |
+| AIR PACK 1+2 FAULT           | BOTH ACSC HAS FAILED                                     |                                      |
+| AIR PACK 1(2) OFF            | PACK 1(2) SW TO OFF & NO FAILURE DETECTED                |                                      |
+| AIR PACK 1(2) OVHT           | PACK COMPRESSOR OUTLET TEMPERATURE RISES ABOVE 260 DEG C |                                      |
+| AIR PACK 1(2) REGUL FAULT    | TEMP REGULATION PERFORMANCE IS DEGRADED                  | RESET BOTH ASCC REFER CB RESET CHART |
