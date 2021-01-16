@@ -31,6 +31,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    lastUpdated: "Last Updated",
     repo: "",
     editLinks: false,
     docsDir: "",
@@ -55,7 +56,7 @@ module.exports = {
         {
           title: "Guide",
           collapsable: false,
-          children: ["", "using-vue", "air-conditioning"],
+          children: ["", "using-vue", "air-conditioning", "reset-cheatsheet"],
         },
       ],
     },

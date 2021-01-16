@@ -1,15 +1,28 @@
 ---
 home: true
 heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: T/s Guide
+tagline: Maintenance Tool
 actionText: Quick Start →
 actionLink: /guide/
-features:
-  - title: Feature 1 Title
-    details: Feature 1 Description
-  - title: Feature 2 Title
-    details: Feature 2 Description
-  - title: Feature 3 Title
-    details: Feature 3 Description
+
 footer: Made by srinivas chilukuri with ❤️
 ---
+
+<div style="text-align: center">
+  <Bit/>
+</div>
+
+<div class="features">
+  <div class="feature">
+    <h2 ><a href="./guide/reset-cheatsheet">FAULT RESET</a></h2>
+    <p> Reset Ecam Warnings / Computer and observed faults</p>
+  </div>
+  <div class="feature">
+    <h2>Test</h2>
+    <p>Test</p>
+  </div>
+  <div class="feature">
+    <h2>Test</h2>
+    <p>Test</p>
+  </div>
+</div>

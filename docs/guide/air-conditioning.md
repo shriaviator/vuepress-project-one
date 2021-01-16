@@ -124,13 +124,15 @@ to the CFDIU.
 
 - refer TSM tasks ref. 21-61-00-810-832-Aor TASK 21-61-00-810-833-A
 
-### ALPHA CALL UP:-
+::: details Airconditioning ALPHA CALL UP:-
 
 - PF — Pack flow
 - COT- Pack compressor outlet temperature- in Deg. Of Centigrade
 - TP- Pack discharge temperature-sensors
 - TW- water extractor temperature-sensors
 - PBV- Pack By-pass valve position in percentage
+
+:::
 
 ::: tip PRESSURIZATION TEST OF THE FUSELAGE
 
@@ -146,7 +148,7 @@ to the CFDIU.
 
 :::
 
-:::details AIDS Alpa Call up:
+:::details Pressurization Alpha Call up:
 
 - ”PDC” :CABIN DIFF.PRESSURE
 - ”VSCB” : CABIN VERTICAL SPEED
