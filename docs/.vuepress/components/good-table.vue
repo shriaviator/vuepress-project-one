@@ -1,6 +1,15 @@
 <template>
   <div>
-    <vue-good-table :columns="columns" :rows="rows" />
+    <vue-good-table
+      strictMode
+      :columns="columns"
+      :rows="rows"
+      row-style-class="every-row"
+      :search-options="{
+        enabled: true,
+        externalQuery: searchTerm,
+      }"
+    />
   </div>
 </template>
 
