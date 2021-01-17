@@ -17,5 +17,8 @@
   "devDependencies": {
     "vuepress": "^1.5.3",
     "vuetable-2": "^2.0.0-beta.4"
+  },
+  "dependencies": {
+    "vuepress-plugin-cat": "^1.0.3"
   }
 }
