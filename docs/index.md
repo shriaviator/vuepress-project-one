@@ -5,7 +5,7 @@ tagline: Maintenance Tool
 actionText: Quick Start →
 actionLink: /guide/
 
-footer: Made by srinivas chilukuri with ❤️
+footer: Made by Srinivas Chilukuri with ❤️
 ---
 
 <div style="text-align: center">
