@@ -1,11 +1,11 @@
 # Ecam Warning Table Test
 
-##### Failure classification and Indication :-
+##### <mark style="background-color: lightblue">Failure classification and Indication</mark> :-
 
 <good-table >
 
 </good-table >
-<style>
+<style scoped>
   table {
   display: table;
   margin: 0;

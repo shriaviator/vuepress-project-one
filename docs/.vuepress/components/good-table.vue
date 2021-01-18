@@ -3,7 +3,7 @@
     <vue-good-table
       styleClass="vgt-table striped bordered"
       max-height="1000px"
-      :fixed-header="true"
+      :fixed-header="false"
       strictMode
       :columns="columns"
       :rows="rows"
