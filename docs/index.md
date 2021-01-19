@@ -18,8 +18,8 @@ footer: Made by Srinivas Chilukuri with ❤️
     <p> Reset Ecam Warnings / Computer and observed faults</p>
   </div>
   <div class="feature">
-    <h2>Test</h2>
-    <p>Test</p>
+    <h2><a href ="./guide/Aircraft-Models">Airbus Aircraft Designation</a></h2>
+    <p>The Secret Codes Behind Every Airbus Plane Name</p>
   </div>
   <div class="feature">
     <h2>Test</h2>

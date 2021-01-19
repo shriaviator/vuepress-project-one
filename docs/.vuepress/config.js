@@ -64,7 +64,13 @@ module.exports = {
         {
           title: "Guide",
           collapsable: false,
-          children: ["", "using-vue", "air-conditioning", "reset-cheatsheet"],
+          children: [
+            "",
+            "using-vue",
+            "air-conditioning",
+            "reset-cheatsheet",
+            "Aircraft-Models",
+          ],
         },
       ],
     },
