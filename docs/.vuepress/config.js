@@ -2,10 +2,6 @@ const { description } = require("../../package");
 const path = require("path"); // Don't forget this
 
 module.exports = {
-  chainWebpack: (config) => {
-    config.resolve.alias.set("@assets", path.resolve(__dirname, "../assets"));
-  },
-
   base: "/vuepress-project-one/",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
