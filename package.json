@@ -24,6 +24,7 @@
   "dependencies": {
     "v-gallery": "^1.2.4",
     "vue-good-table": "^2.21.2",
-    "vuepress-plugin-cat": "^1.0.3"
+    "vuepress-plugin-cat": "^1.0.3",
+    "vuepress-plugin-copyright": "^1.0.2"
   }
 }

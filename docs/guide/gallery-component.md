@@ -1,0 +1,3 @@
+# Gallery component
+
+<gallery-component/>
