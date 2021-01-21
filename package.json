@@ -10,7 +10,7 @@
   "repository": "later/vupress-one",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build src",
+    "build": "vuepress build docs",
     "docs:build": "vuepress build docs"
   },
   "license": "MIT",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "v-gallery": "^1.2.4",
-    "vue-good-table": "^2.21.2",
+    "vue-good-table": "^2.21.3",
     "vuepress-plugin-cat": "^1.0.3",
     "vuepress-plugin-copyright": "^1.0.2"
   }

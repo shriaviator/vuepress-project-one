@@ -1,3 +1,5 @@
 # Gallery component
 
-<gallery-component/>
+<ClientOnly>
+<gallery-component />
+</ClientOnly>

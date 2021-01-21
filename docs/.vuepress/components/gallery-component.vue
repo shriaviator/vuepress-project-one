@@ -1,10 +1,16 @@
 <template>
-  <!-- default gallery mode -->
-  <v-gallery :images="list"> </v-gallery>
+  <div>
+    <!-- default gallery mode -->
+    <v-gallery :images="list"> </v-gallery>
+  </div>
 </template>
 
 <script>
+import VueGallery from "v-gallery/src/Gallery";
 export default {
+  components: {
+    "v-gallery": VueGallery,
+  },
   data() {
     return {
       list: [
