@@ -1,5 +1,4 @@
 const { description } = require("../../package");
-const path = require("path"); // Don't forget this
 
 module.exports = {
   base: "/vuepress-project-one/",
