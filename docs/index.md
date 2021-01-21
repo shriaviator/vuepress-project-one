@@ -14,7 +14,7 @@ footer: Made by Srinivas Chilukuri with ❤️
 
 <div class="features">
   <div class="feature">
-    <h2 ><a href="./guide/reset-cheatsheet">FAULT RESET</a></h2>
+    <h2 ><a href="./guide/reset-cheatsheet">Fault Reset</a></h2>
     <p> Reset Ecam Warnings / Computer and observed faults</p>
   </div>
   <div class="feature">

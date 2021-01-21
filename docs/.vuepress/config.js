@@ -18,6 +18,24 @@ module.exports = {
    */
   head: [
     [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-9VD62092G1",
+      },
+    ],
+    [
+      "script",
+      {},
+      `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9VD62092G1');
+`,
+    ],
+    [
       "link",
       {
         href:
@@ -44,7 +62,7 @@ module.exports = {
     editLinks: false,
     docsDir: "",
     editLinkText: "",
-    lastUpdated: false,
+
     nav: [
       {
         text: "Guide",
