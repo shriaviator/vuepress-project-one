@@ -84,11 +84,11 @@ module.exports = {
           collapsable: false,
           children: [
             "",
-            "using-vue",
+
             "air-conditioning",
+            "using-vue",
             "reset-cheatsheet",
             "Aircraft-Models",
-            "gallery-component",
           ],
         },
       ],

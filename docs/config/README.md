@@ -2,14 +2,14 @@
 sidebar: auto
 ---
 
-# Config
+# Test Area
 
-## foo
+## Quiz
 
-- Type: `string`
-- Default: `/`
+<vue-quiz />
 
-## bar
+## Gallery Test Area
 
-- Type: `string`
-- Default: `/`
+<ClientOnly>
+<gallery-component />
+</ClientOnly>

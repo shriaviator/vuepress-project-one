@@ -1,0 +1,186 @@
+{
+  "user": "Dave",
+  "questions": [
+     {
+        "text": "Conditioned air is distributed to:?",
+        "responses": [
+           {
+              "text": "Cockpit, cargo bays and cabin"
+           },
+           {
+              "text": "Cockpit, fwd and aft cabins",
+              "correct": true
+           },
+           {
+              "text": "Cockpit, avionics bay and cabin"
+           },
+           {
+              "text": "Cockpit, cabin and holds 1 and 2 only"
+           }
+        ]
+     },
+     {
+        "text": "Hot air fault light illuminates on the air conditioning panel,",
+        "responses": [
+           {
+              "text": "The hot air press. reg. valve closes and the trim air valves close.",
+              "correct": true
+           },
+           {
+              "text": "The hot air press. reg. valve opens and the trim air valves close."
+           },
+           {
+              "text": "The hot air press. reg. valve closes and the trim air valves open."
+           },
+           {
+              "text": "The hot air press. reg. valve opens and the trim air valves open."
+           }
+        ]
+     },
+     {
+        "text": "Does the trim air provide the warm air or the cold air to the air conditioning system?",
+        "responses": [
+           {
+              "text": "Cold air"
+           },
+           {
+              "text": "Warm air",
+              "correct": true
+           },
+           {
+              "text": "None of the Above"
+           },
+           {
+              "text": "All of the above"
+           }
+        ]
+     },
+     {
+        "text": "In case of zone controller primary and secondary channel failure, what temperatures are maintained by pack one and pack two?",
+        "responses": [
+           {
+              "text": "20 deg.C for pack one and 10 deg.C for pack two",
+              "correct": true
+           },
+           {
+              "text": "24 deg.C for pack one and 15 deg.C for pack two"
+           },
+           {
+              "text": "25 deg.C both"
+           },
+           {
+              "text": "15 deg.C both"
+           }
+        ]
+     },
+     {
+        "text": "In normal flight in closed circuit configuration, the avionics ventilation system controls the temperature of the cooling air by:",
+        "responses": [
+           {
+              "text": "Adding air conditioned air to the flow "
+           },
+           {
+              "text": "Extracting air overboard"
+           },
+           {
+              "text": "Adding avionics bay air"
+              
+           },
+           {
+              "text": "Passing air through a skin heat exchanger",
+              "correct": true
+           }
+        ]
+     },
+     {
+        "text": "To enable Ram air to the mixture unit  The Ram air switch should be used:",
+        "responses": [
+           {
+              "text": "At any time"
+           },
+           {
+              "text": "Only when differential pressure is less than 1 psi.",
+              "correct": true
+           },
+           {
+              "text": "When pressure is greater than 1 psi diff"
+           },
+           {
+              "text": "Only after outflow valve is fully opened"
+           }
+        ]
+     },
+     {
+        "text": "Pack controller, secondary channel failure ",
+        "responses": [
+           {
+              "text": "No effect on pack regulation backup mode is lost",
+              "correct": true
+           },
+           {
+              "text": "Pack is lost "
+           },
+           {
+              "text": "No effect (all modes still available)"
+           },
+           {
+              "text": "Pack outlet temperature is controlled at 15 deg.C'"
+           }
+        ]
+     },
+     {
+        "text": "Pack controller, primary and secondary channel failure  ",
+        "responses": [
+           {
+              "text": "Pack outlet temperature is controlled to between 5 and 30 deg.C by the anti-ice valve",
+              "correct": true
+           },
+           {
+              "text": "The pack is closed"
+           },
+           {
+              "text": "The packs deliver a fixed temperature of 20 deg.C"
+           },
+           {
+              "text": "None of the above"
+           }
+        ]
+     },
+     {
+        "text": "Hot air press. reg. valve failed open:",
+        "responses": [
+           {
+              "text": "Optimized regulation is lost"
+           },
+           {
+              "text": "The temperature stays at the value selected"
+           },
+           {
+              "text": "No effect",
+              "correct": true
+           },
+           {
+              "text": "Cabin temperature will be controlled at the upper limit 30 deg.C"
+           }
+        ]
+     },
+     {
+        "text": " Bleed air supplied from the APU (APU bleed valve open), the pack flow is automatically selected:?",
+        "responses": [
+           {
+              "text": "High ",
+              "correct": true
+           },
+           {
+              "text": "Normal"
+           },
+           {
+              "text": "Low"
+           },
+           {
+              "text": "Econ. Flow"
+           }
+        ]
+     }
+  ]
+}
