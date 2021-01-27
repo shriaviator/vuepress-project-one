@@ -86,6 +86,7 @@ module.exports = {
             "",
 
             "air-conditioning",
+            "ata-twentytwo",
             "using-vue",
             "reset-cheatsheet",
             "Aircraft-Models",
