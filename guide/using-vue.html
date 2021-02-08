@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Airbus Computer Reset Cheatsheet | Jebah</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-9VD62092G1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9VD62092G1');
+</script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="description" content="tsguide">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/vuepress-project-one/assets/css/0.styles.0cbbbae1.css" as="style"><link rel="preload" href="/vuepress-project-one/assets/js/app.b40647e1.js" as="script"><link rel="preload" href="/vuepress-project-one/assets/js/2.671f3fe7.js" as="script"><link rel="preload" href="/vuepress-project-one/assets/js/25.eaeac558.js" as="script"><link rel="preload" href="/vuepress-project-one/assets/js/8.d7fd9f7b.js" as="script"><link rel="prefetch" href="/vuepress-project-one/assets/js/10.1aaa00d5.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/11.955aef30.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/12.e774cb6d.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/13.77999d29.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/14.3574af9b.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/15.191b64a1.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/16.9ae7e32f.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/17.7e8168a0.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/18.75280223.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/19.8b9532b4.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/20.dd4e691c.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/21.09c4b7c1.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/22.6aa5a242.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/23.111af6f6.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/24.1db9d4eb.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/26.692b8f22.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/3.49044ea2.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/4.eda781a2.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/5.0e90aa2a.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/6.85572c80.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/7.7bae41cc.js"><link rel="prefetch" href="/vuepress-project-one/assets/js/9.3201d934.js">
+    <link rel="stylesheet" href="/vuepress-project-one/assets/css/0.styles.0cbbbae1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-project-one/" class="home-link router-link-active"><!----> <span class="site-name">Jebah</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress-project-one/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/vuepress-project-one/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://dgca.gov.in/digigov-portal/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DGCA
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress-project-one/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/vuepress-project-one/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://dgca.gov.in/digigov-portal/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DGCA
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-project-one/guide/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/vuepress-project-one/guide/air-conditioning.html" class="sidebar-link">🏅ATA-21 Air Conditioning</a></li><li><a href="/vuepress-project-one/guide/ata-twentytwo.html" class="sidebar-link">ATA-22 Autoflight</a></li><li><a href="/vuepress-project-one/guide/using-vue.html" aria-current="page" class="active sidebar-link">Airbus Computer Reset Cheatsheet</a></li><li><a href="/vuepress-project-one/guide/reset-cheatsheet.html" class="sidebar-link">Ecam Warning T/s</a></li><li><a href="/vuepress-project-one/guide/Aircraft-Models.html" class="sidebar-link">Airbus Aircraft Designation</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="airbus-computer-reset-cheatsheet"><a href="#airbus-computer-reset-cheatsheet" class="header-anchor">#</a> Airbus Computer Reset Cheatsheet</h1> <h5 id="failure-classification-and-indication"><a href="#failure-classification-and-indication" class="header-anchor">#</a> <mark style="background-color:lightblue;">Failure classification and Indication</mark> :-</h5> <div data-v-7347d838><div strictMode="" class="vgt-wrap " data-v-7347d838><!----> <div class="vgt-inner-wrap"><!----> <div class="vgt-global-search vgt-clearfix"><div class="vgt-global-search__input vgt-pull-left"><form role="search"><label for="vgt-search-621871546873"><span aria-hidden="true" class="input__icon"><div class="magnifying-glass"></div></span> <span class="sr-only">Search</span></label> <input id="vgt-search-621871546873" type="text" value="" class="vgt-input vgt-pull-left"></form></div> <div class="vgt-global-search__actions vgt-pull-right"></div></div> <!----> <div class="vgt-fixed-header"><!----></div> <div class="vgt-responsive" style="overflow:scroll-y;max-height:1000px;"><table id="vgt-table" class="vgt-table striped bordered "><colgroup><col id="col-0"><col id="col-1"><col id="col-2"><col id="col-3"><col id="col-4"><col id="col-5"></colgroup> <thead><tr><!----> <!----> <th scope="col" aria-sort="descending" aria-controls="col-0" class="vgt-left-align sortable" style="min-width:auto;max-width:auto;width:auto;"><span>COMPUTER</span> <button><span class="sr-only">
+          Sort table by COMPUTER in descending order
+          </span></button></th><th scope="col" aria-sort="descending" aria-controls="col-1" class="vgt-left-align sortable" style="min-width:auto;max-width:auto;width:auto;"><span>C/B OUT</span> <button><span class="sr-only">
+          Sort table by C/B OUT in descending order
+          </span></button></th><th scope="col" aria-sort="descending" aria-controls="col-2" class="vgt-left-align sortable" style="min-width:auto;max-width:auto;width:auto;"><span>C/B IN</span> <button><span class="sr-only">
+          Sort table by C/B IN in descending order
+          </span></button></th><th scope="col" aria-sort="descending" aria-controls="col-3" class="vgt-left-align sortable" style="min-width:auto;max-width:auto;width:auto;"><span>SYS1</span> <button><span class="sr-only">
+          Sort table by SYS1 in descending order
+          </span></button></th><th scope="col" aria-sort="descending" aria-controls="col-4" class="vgt-left-align sortable" style="min-width:auto;max-width:auto;width:auto;"><span>SYS2</span> <button><span class="sr-only">
+          Sort table by SYS2 in descending order
+          </span></button></th><th scope="col" aria-sort="descending" aria-controls="col-5" class="vgt-left-align sortable" style="min-width:auto;max-width:auto;width:auto;"><span>SYS3</span> <button><span class="sr-only">
+          Sort table by SYS3 in descending order
+          </span></button></th></tr> <!----></thead> <tbody><!----> <tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ABCU &amp; Y INDTR
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  C10
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ACP
+                </span></td><td class="vgt-left-align"><span>
+                  10 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  1 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  G6
+                </span></td><td class="vgt-left-align"><span>
+                  G7
+                </span></td><td class="vgt-left-align"><span>
+                  M2
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ACCELAROMETER
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  K18
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ADF
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  2 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  H14
+                </span></td><td class="vgt-left-align"><span>
+                  K2
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ADIRU
+                </span></td><td class="vgt-left-align"><span>
+                  15 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  5 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  I - 6,7(BAT)
+                </span></td><td class="vgt-left-align"><span>
+                  N04,06,08
+                </span></td><td class="vgt-left-align"><span>
+                  N03,05,07
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  AEVC
+                </span></td><td class="vgt-left-align"><span>
+                  30 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  35 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  D-5,6
+                </span></td><td class="vgt-left-align"><span>
+                  Y-17
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ATC
+                </span></td><td class="vgt-left-align"><span>
+                  03 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  G-11
+                </span></td><td class="vgt-left-align"><span>
+                  K-7
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ATSU
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  L15,16
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  BRAKE FAN
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  L32
+                </span></td><td class="vgt-left-align"><span>
+                  L35
+                </span></td><td class="vgt-left-align"><span>
+                  M32(CTRL)
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  BMC
+                </span></td><td class="vgt-left-align"><span>
+                  1 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  22 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  D11, 12
+                </span></td><td class="vgt-left-align"><span>
+                  Z22, 23
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  BSCU
+                </span></td><td class="vgt-left-align"><span>
+                  1 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  1 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  M33, 34
+                </span></td><td class="vgt-left-align"><span>
+                  M35, 36
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  CARGO
+                </span></td><td class="vgt-left-align"><span>
+                  1 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  30 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  C6, T22
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  CFDIU
+                </span></td><td class="vgt-left-align"><span>
+                  &gt; 3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  60 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  J17, 16
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  CHC (cargo)
+                </span></td><td class="vgt-left-align"><span>
+                  2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  26 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  C7, 8
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  CIDS
+                </span></td><td class="vgt-left-align"><span>
+                  2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  120 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  G2, 3, 4,5
+                </span></td><td class="vgt-left-align"><span>
+                  M5, 6, 7,8 N11
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  CPCU
+                </span></td><td class="vgt-left-align"><span>
+                  &gt; 2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  1 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  D9
+                </span></td><td class="vgt-left-align"><span>
+                  Y22
+                </span></td><td class="vgt-left-align"><span>
+                  Y23(MANUAL)
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  CLOCK COCKPIT
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  F11,N02
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  COCKPIT SEAT
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  U11
+                </span></td><td class="vgt-left-align"><span>
+                  U14
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  COCKPIT VIDEO
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  T16
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  DFDR
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  K16
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  DMC
+                </span></td><td class="vgt-left-align"><span>
+                  20 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  4 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  E9, E11
+                </span></td><td class="vgt-left-align"><span>
+                  Q8, R8
+                </span></td><td class="vgt-left-align"><span>
+                  E7, E10, Q9
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  DMCU
+                </span></td><td class="vgt-left-align"><span>
+                  5 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  10 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  FWD GALLEY
+                </span></td><td class="vgt-left-align"><span>
+                  AFT GALLEY
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  DME
+                </span></td><td class="vgt-left-align"><span>
+                  2 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  2 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  G14
+                </span></td><td class="vgt-left-align"><span>
+                  K6
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  DMU
+                </span></td><td class="vgt-left-align"><span>
+                  1 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  40 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  K15
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  DU
+                </span></td><td class="vgt-left-align"><span>
+                  2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  E1,2,3,4,5
+                </span></td><td class="vgt-left-align"><span>
+                  R2,3,10,11
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ECAM CNTL PANEL
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  E12
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ECB
+                </span></td><td class="vgt-left-align"><span>
+                  10 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  MAX 3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  L41, 42
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ELAC
+                </span></td><td class="vgt-left-align"><span>
+                  2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  8 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  B11,A01(105VU)
+                </span></td><td class="vgt-left-align"><span>
+                  R20,A02(105VU)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  EVMU
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  R44
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FAC
+                </span></td><td class="vgt-left-align"><span>
+                  22 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  95 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  B3, 4
+                </span></td><td class="vgt-left-align"><span>
+                  M18, 19
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FADEC
+                </span></td><td class="vgt-left-align"><span>
+                  2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  2 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  A4, R 41
+                </span></td><td class="vgt-left-align"><span>
+                  A5, Q40
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FAP
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  H01 , Q14
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FCDC
+                </span></td><td class="vgt-left-align"><span>
+                  &gt; 3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  B10
+                </span></td><td class="vgt-left-align"><span>
+                  Q20
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FCU
+                </span></td><td class="vgt-left-align"><span>
+                  7 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  10 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  B5
+                </span></td><td class="vgt-left-align"><span>
+                  M21
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FDIU
+                </span></td><td class="vgt-left-align"><span>
+                  1 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  MAX 25 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  K17
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FDU
+                </span></td><td class="vgt-left-align"><span>
+                  30 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  57 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  A6, Q38
+                </span></td><td class="vgt-left-align"><span>
+                  A7, Q39
+                </span></td><td class="vgt-left-align"><span>
+                  L43, 44
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FMGC
+                </span></td><td class="vgt-left-align"><span>
+                  2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  B2
+                </span></td><td class="vgt-left-align"><span>
+                  M17
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FQIC
+                </span></td><td class="vgt-left-align"><span>
+                  10 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  80 SEC MAX
+                </span></td><td class="vgt-left-align"><span>
+                  A-13
+                </span></td><td class="vgt-left-align"><span>
+                  M-27
+                </span></td><td class="vgt-left-align"><span>
+                  AUTO R27
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FWC
+                </span></td><td class="vgt-left-align"><span>
+                  30 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  50 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  F-1
+                </span></td><td class="vgt-left-align"><span>
+                  Q-7
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  GCU
+                </span></td><td class="vgt-left-align"><span>
+                  15 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  30 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  T26
+                </span></td><td class="vgt-left-align"><span>
+                  T27
+                </span></td><td class="vgt-left-align"><span>
+                  Y25
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  GPCU
+                </span></td><td class="vgt-left-align"><span>
+                  0
+                </span></td><td class="vgt-left-align"><span>
+                  35 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  Y24
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  GPWS
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  2 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  P6, 7
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  HORN CUT OUT
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  P-8,P09
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  HF
+                </span></td><td class="vgt-left-align"><span>
+                  10 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  10 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  HA14
+                </span></td><td class="vgt-left-align"><span>
+                  L13
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ILS
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  1 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  G12
+                </span></td><td class="vgt-left-align"><span>
+                  K9
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  LGCIU
+                </span></td><td class="vgt-left-align"><span>
+                  30 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  1 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  C9 ,Q34
+                </span></td><td class="vgt-left-align"><span>
+                  Q35
+                </span></td><td class="vgt-left-align"><span>
+                  ESS BAT
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  LOUDSPEAKER
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  F10
+                </span></td><td class="vgt-left-align"><span>
+                  P08
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  MCDU
+                </span></td><td class="vgt-left-align"><span>
+                  10 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  45 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  B1
+                </span></td><td class="vgt-left-align"><span>
+                  N20
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  MMR
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  G12
+                </span></td><td class="vgt-left-align"><span>
+                  L07
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  OUTER X VALVE
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  L - M22 ,A10
+                </span></td><td class="vgt-left-align"><span>
+                  R - M23 , A11
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  PACK CONTROLLER
+                </span></td><td class="vgt-left-align"><span>
+                  2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  30 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  X21, 22 Y18, 19
+                </span></td><td class="vgt-left-align"><span>
+                  W21, 22, Y20, 21
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  PHC
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  2 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  D3
+                </span></td><td class="vgt-left-align"><span>
+                  Y12
+                </span></td><td class="vgt-left-align"><span>
+                  Y16
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  PARKING BRAKE
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  N36,37
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  RADIO ALTIMETER
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  K11
+                </span></td><td class="vgt-left-align"><span>
+                  K12
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  RADAR
+                </span></td><td class="vgt-left-align"><span>
+                  3SEC
+                </span></td><td class="vgt-left-align"><span>
+                  15a 30SEC
+                </span></td><td class="vgt-left-align"><span>
+                  K13
+                </span></td><td class="vgt-left-align"><span>
+                  K14
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  RMP
+                </span></td><td class="vgt-left-align"><span>
+                  2 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  2 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  G10
+                </span></td><td class="vgt-left-align"><span>
+                  L2
+                </span></td><td class="vgt-left-align"><span>
+                  L3
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  SDAC
+                </span></td><td class="vgt-left-align"><span>
+                  2Min
+                </span></td><td class="vgt-left-align"><span>
+                  5 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  F2,4,5 Q3,4
+                </span></td><td class="vgt-left-align"><span>
+                  F3,5, Q2,5,6
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  SDCU
+                </span></td><td class="vgt-left-align"><span>
+                  2Min
+                </span></td><td class="vgt-left-align"><span>
+                  80 SEC MAX
+                </span></td><td class="vgt-left-align"><span>
+                  C6
+                </span></td><td class="vgt-left-align"><span>
+                  T18
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  SEC
+                </span></td><td class="vgt-left-align"><span>
+                  5 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  18 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  B8 , B01(105VU)
+                </span></td><td class="vgt-left-align"><span>
+                  Q18
+                </span></td><td class="vgt-left-align"><span>
+                  Q19
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  SIDE STICK LOCK
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  N16
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  SFCC
+                </span></td><td class="vgt-left-align"><span>
+                  2 MIN
+                </span></td><td class="vgt-left-align"><span>
+                  &lt; 2 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  B6, R21
+                </span></td><td class="vgt-left-align"><span>
+                  B7, Q21
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  S/BY HORIZON
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  F12
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  S/BY ALTIMETER
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  F14
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  THS ACT. MOTOR
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  Q16
+                </span></td><td class="vgt-left-align"><span>
+                  B9
+                </span></td><td class="vgt-left-align"><span>
+                  Q17
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  TEMP CONTROL
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  D07
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  T2CAS
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  K10
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  VHF
+                </span></td><td class="vgt-left-align"><span>
+                  1 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  10 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  G9
+                </span></td><td class="vgt-left-align"><span>
+                  L4
+                </span></td><td class="vgt-left-align"><span>
+                  L5
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  VOR
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  3 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  G13
+                </span></td><td class="vgt-left-align"><span>
+                  K8
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  WHC
+                </span></td><td class="vgt-left-align"><span>
+                  5 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  5 SEC
+                </span></td><td class="vgt-left-align"><span>
+                  X13
+                </span></td><td class="vgt-left-align"><span>
+                  W13
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  LIGHT – DOME
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  HO8
+                </span></td><td class="vgt-left-align"><span>
+                  Y06
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  NAV
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  T03
+                </span></td><td class="vgt-left-align"><span>
+                  T02
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  LANDING
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  T04 , T05 (L)
+                </span></td><td class="vgt-left-align"><span>
+                  T06 , T07 (R)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  BEACON
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  U06 (U)
+                </span></td><td class="vgt-left-align"><span>
+                  U03 (L)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  LOGO
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  V02 (L)
+                </span></td><td class="vgt-left-align"><span>
+                  V03 (R)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  STROBE
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  V05
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ENG SCAN
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  W02 (L)
+                </span></td><td class="vgt-left-align"><span>
+                  W03 (R)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  TURN OFF
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  W06 (L)
+                </span></td><td class="vgt-left-align"><span>
+                  W05 (R)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  T/O
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  W07
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  TAXI
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  W08
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FLOOD
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  Z04
+                </span></td><td class="vgt-left-align"><span>
+                  Z05
+                </span></td><td class="vgt-left-align"><span>
+                  Z06
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ENG OIL QNTY
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  N39
+                </span></td><td class="vgt-left-align"><span>
+                  N41
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  REV LOCK
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  N44
+                </span></td><td class="vgt-left-align"><span>
+                  N45
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  BLEED
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  D11,12
+                </span></td><td class="vgt-left-align"><span>
+                  Z22,23
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  X BLEED VALVE
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  D13
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FUEL - APU PUMP
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  B14, K39,M38
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  WING TANK
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  N23 , N26 (L)
+                </span></td><td class="vgt-left-align"><span>
+                  Q23 , Q26 (R)
+                </span></td><td class="vgt-left-align"><span>
+                  P23 P26(C)
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FLIGHT CONTROL--
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  SLAT CNTRL
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  B06
+                </span></td><td class="vgt-left-align"><span>
+                  R21
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  FLAP CNTRL
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  B07
+                </span></td><td class="vgt-left-align"><span>
+                  Q21
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  SLAT/FLAP POS IND
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  B12
+                </span></td><td class="vgt-left-align"><span>
+                  P16
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  WTB SLAT
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  S06
+                </span></td><td class="vgt-left-align"><span>
+                  P19
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  WTB FLAP
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  S07
+                </span></td><td class="vgt-left-align"><span>
+                  P20
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ANTI – ICE ----
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  PITOT
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  D02
+                </span></td><td class="vgt-left-align"><span>
+                  Y14
+                </span></td><td class="vgt-left-align"><span>
+                  Z16
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  AOA
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  D04
+                </span></td><td class="vgt-left-align"><span>
+                  Y13
+                </span></td><td class="vgt-left-align"><span>
+                  Z15
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ENG
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  X10
+                </span></td><td class="vgt-left-align"><span>
+                  W10
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  WIPER
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  X12
+                </span></td><td class="vgt-left-align"><span>
+                  W12
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  P2/T2
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  Z10
+                </span></td><td class="vgt-left-align"><span>
+                  Y10
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  STATIC PROBE
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  Z13
+                </span></td><td class="vgt-left-align"><span>
+                  Y11
+                </span></td><td class="vgt-left-align"><span>
+                  Z14
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  TAT
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  Z12
+                </span></td><td class="vgt-left-align"><span>
+                  Y15
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  Y PUMP
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  Q36,37
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ELECRICAL---
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  HOT BUS
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  D01,E01(105VU)
+                </span></td><td class="vgt-left-align"><span>
+                  D02,E02(105VU)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  BCL
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  F01,G01(1O5VU)
+                </span></td><td class="vgt-left-align"><span>
+                  F02,J02(105VU)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  STATIC INVERTOR
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  G02,H02(105VU)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  ESS TR
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  C01,02(106VU)
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  BTC
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  T28,29
+                </span></td><td class="vgt-left-align"><span>
+                  T30,31
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr><tr class=" every-row"><!----> <!----> <td class="vgt-left-align"><span>
+                  TR1
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  X25,X26
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td><td class="vgt-left-align"><span>
+                  ***
+                </span></td></tr> <!----></tbody> <!----></table></div> <!----> <!----></div></div></div> <style scoped="scoped">
+  table {
+  display: table;
+  margin: 0;
+}
+tr {
+  border-top: none;
+}
+tr:nth-child(2n) {
+  background-color: transparent;
+}
+th,
+td {
+  border: none;
+  padding: auto auto;
+}
+  </style></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/22/2021, 7:43:22 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vuepress-project-one/guide/ata-twentytwo.html" class="prev">
+        ATA-22 Autoflight
+      </a></span> <span class="next"><a href="/vuepress-project-one/guide/reset-cheatsheet.html">
+        Ecam Warning T/s
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div class="cat-container" data-v-a13867c0><canvas id="vuepress-cat" width="280" height="250" class="live2d" data-v-a13867c0></canvas></div></div></div>
+    <script src="/vuepress-project-one/assets/js/app.b40647e1.js" defer></script><script src="/vuepress-project-one/assets/js/2.671f3fe7.js" defer></script><script src="/vuepress-project-one/assets/js/25.eaeac558.js" defer></script><script src="/vuepress-project-one/assets/js/8.d7fd9f7b.js" defer></script>
+  </body>
+</html>
