@@ -8,7 +8,7 @@ sidebar: auto
 
 <vue-quiz />
 
-## Gallery Test Area
+## Leap Component Location Gallery
 
 <ClientOnly>
 <gallery-component />
