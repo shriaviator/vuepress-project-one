@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: Maintenance Tool
+heroImage: https://ik.imagekit.io/bfq9nml2mie/vuepress_home/home2.jpg
+tagline: null
 actionText: Quick Start →
 actionLink: /guide/
 
